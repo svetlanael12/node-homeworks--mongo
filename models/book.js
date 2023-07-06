@@ -13,18 +13,10 @@ const bookSchema = new Schema({
         type: String,
         default: "",
     },
-    favorite: {
-        type: String,
-        default: "false",
-    },
-    fileCover: {
-        type: String,
-        default: "",
-    },
-    fileName: {
-        type: String,
-        default: "",
-    },
+    comments: {
+        type: Array,
+        default: [],
+    }
 })
 
 module.exports = model('Book', bookSchema)
